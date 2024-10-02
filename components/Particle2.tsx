@@ -4,17 +4,16 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-export default function Particle() {
+export default function Particle2() {
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
-    console.log(engine);
   }, []);
 
   const particlesLoaded = useCallback(async () => {}, []);
 
   return (
     <Particles
-      className="h-screen"
+      className="h-[80vh]"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -22,7 +21,7 @@ export default function Particle() {
         fpsLimit: 90,
         interactivity: {
           events: {
-            onHover: { enable: true, mode: "repulse" },
+            onHover: { enable: true, mode: "attract" },
             resize: true,
           },
           modes: {
@@ -34,14 +33,14 @@ export default function Particle() {
         },
         particles: {
           color: {
-            value: "#EE0F0F",
+            value: "#16592D",
           },
           links: {
-            color: "#EE0F0F",
+            color: "#16592D",
             enable: true,
-            distance: 150,
-            width: 2,
-            opacity: 0.5,
+            distance: 200,
+            width: 3,
+            opacity: 0.6,
           },
           collisions: {
             enable: true,
@@ -50,27 +49,27 @@ export default function Particle() {
             enable: true,
             direction: "none",
             outModes: {
-              default: "bounce",
+              default: "destroy",
             },
             random: true,
-            straight: false,
-            speed: 1,
+            straight: true,
+            speed: 1.2,
           },
           number: {
             density: {
               enable: true,
               area: 800,
             },
-            value: 100,
+            value: 90,
           },
           opacity: {
             value: 0.5,
           },
           shape: {
-            type: "circle",
+            type: "square",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 5, max: 15 },
           },
         },
         detectRetina: true,

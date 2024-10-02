@@ -6,6 +6,90 @@
   animation: spin 25s linear infinite;
 }
 
+.menu {
+  position: fixed;
+  right: 20px;
+  top: 20%;
+  z-index: 20;
+  background-color: rgba(130, 130, 130, 0.119);
+  border-radius: 100px;
+
+  .item {
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    filter: drop-shadow();
+  }
+  .item:hover {
+    transform: scale(1.15);
+  }
+}
+
+.boba {
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  z-index: 50;
+}
+.biba {
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  z-index: 40;
+}
+
+.buba {
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  z-index: 30;
+}
+.Home1 {
+  background-color: #e92f2f;
+}
+.Home2 {
+  background-color: #dd5151;
+}
+.Home3 {
+  background-color: #ee8282;
+}
+.Works1 {
+  background-color: #8d02a2;
+}
+.Works2 {
+  background-color: #af26c5;
+}
+.Works3 {
+  background-color: #a151ae;
+}
+.Skills1 {
+  background-color: #ff9500;
+}
+.Skills2 {
+  background-color: #f6b037;
+}
+.Skills3 {
+  background-color: #ffcd6f;
+}
+.GitHub1 {
+  background-color: #21d82a;
+}
+.GitHub2 {
+  background-color: #44e757;
+}
+.GitHub3 {
+  background-color: #8aeb89;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -13,4 +97,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.animate-pulse {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  filter: drop-shadow(1px 1px 50px #ef4444ce);
 }

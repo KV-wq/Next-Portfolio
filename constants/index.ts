@@ -14,19 +14,19 @@ export const NavLinks = [
     link: "/",
   },
   {
-    name: "About me",
+    name: "Works",
     icon: "/logos/1.png",
+    link: "/my-projects",
+  },
+  {
+    name: "Skills",
+    icon: "/logos/2.png",
     link: "/about-me",
   },
   {
-    name: "Blog",
-    icon: "/logos/2.png",
-    link: "/mern-blog",
-  },
-  {
-    name: "Projects",
+    name: "GitHub",
     icon: "/logos/3.png",
-    link: "/my-projects",
+    link: "/github",
   },
 ];
 
